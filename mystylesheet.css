@@ -1,0 +1,96 @@
+
+#bigImage{
+	width:150px;
+	height:150px;
+	float:left;
+	display:block;
+}
+#smallImage{
+	display:none;
+}
+
+.header__menu {
+  display: none;
+}
+
+.nav_list{
+	margin-top:50px;
+	list-style:none;
+	display: block;
+}
+.navitem{
+	margin-left:10px;
+	display:inline;
+}
+.title_head {
+	 margin-top:50px; 
+     display: inline-block;
+	}
+
+section{
+	  margin:50px;
+}
+.photo{
+	margin:2px;
+	height:250px;
+	width:31%;
+}
+@media screen and (max-width: 650px){
+	.photo{
+		width:45%;
+	}
+
+
+.navclass {
+   z-index: 10;
+    width: 270px;
+    position: absolute;
+    /* This trasform moves the navlist off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Provide an animation for the drawer (this is optional) */
+    transition: transform 0.3s ease;
+  }
+  .navclass.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .navitem {
+  	background-color: blue;
+  	font-size: 1.5em;
+  	color: red;
+    display: list-item;
+    border: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  #menu{
+  	/*margin-top:50px;*/
+  	display: inline-block;
+  }
+.header__menu {
+	/*margin-top: 50px;*/
+   /* display: inline-block;*/
+   position: absolute;
+   right:0;
+   padding: 1em;
+  }
+ .header__menu svg {
+    width: 32px;
+    fill: #B0B0EE;
+  }
+}
+@media screen and (max-width: 475px){
+	.photo{
+		width:90%;
+	}
+	#bigImage{
+			display:none;
+			}	
+	#smallImage{
+		width:150px;
+	    height:150px;
+	    float:left;
+		display:block;
+	}
+}
