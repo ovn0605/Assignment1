@@ -1,64 +1,80 @@
-<!DOCTYPE html>
-<html>
-<head> 
-	<title>Assignment 1</title>
-	<link href="mystylesheet.css" rel="stylesheet" type="text/css" alt="picture of Deer">
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/mystylesheet.css" rel="stylesheet">
+
 </head>
+
 <body>
-	<header>
-		<div>
-       <!-- Courtesy https://unsplash.com/search/photos/flora-and-fauna-->
-	     <img  class="logo" id="bigImage" src="images/deersize3.jpg">
-	     <img  class="logo" id="smallImage" src="images/bird1.jpg">
-	     <h1 class="title_head">  Fauna and flora Ltd </h1>
-	   </div>
+
+    <header class="container-fluid">
+        <div class="row">
+            <!-- Courtesy https://unsplash.com/search/photos/flora-and-fauna-->
+            <div class="col-xs-3 col-md-3 col-lg-3">
+                <img id="deer_image" src="images/deersize3.jpg" alt="Deer Image">
+                <img id="bird_image" src="images/bird1.jpg" alt="Bird Image">
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-6">
+                <h1 class="logo_title">Fauna and Flora Ltd</h1>
+            </div>
+        </div>
         <!--For obtaining the toggle button, I have used what was provided in the activities -->
         <a id="menu" class="header__menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
+            </svg>
         </a>
     </header>
-    <nav id="navmenu" class="navclass"> 
-     <ul class="nav_list">
-      <li class="navitem">Home </li>
-      <li class="navitem"> Register</li>
-      <li class="navitem"> Latest News</li>
-      <li class="navitem"> Contact Us</li>
-    </ul>
-    </nav>
-    <main>
-    <section class="text-details">
-    	<div>
-    	    <p>The OM Flora and Fauna organization is to help in the conservation of fauna and flora. Individuals interested in such conservation are encouraged to join the site and bring their ideas. The organiztion will soon be offering membership. Members will be meeting regularly to discuss ideas, organize presentations and visits to different sites.</p>
-    	    <p>Members will also prepare awreness campaigns and go and meet members of the public to propagate awareness about different types of endangered species the the importance of fauna and flora conservation</p>
-    	    <p>There will be need to list the different types of endangered species and collect data about such species and share the data with the public. There will also be the need for a long term action plan</p>
-    	</div>
-     </section>
-     <section>
-     	<div >
-        <!--Courtesy www.pinterest.ca/pscheen-->
-     		<img class="photo" src="images/fish.png">
-     		<img class="photo" src="images/tree.jpg">
-        <!-- Courtesy https://unsplash.com/search/photos/flora-and-fauna-->
-     		<img class="photo" src="images/deersize3.jpg">
-     	</div>
-     </section>
-     <footer>
-       <p> Acknowledgement- Pictures from: www.pinterest.ca/pscheen, https://unsplash.com/search/photos/flora-and-fauna</p>
-   </main>
-      <script>
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.navclass');
 
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-    </script>
+    <nav id="navmenu" class="navclass">
+        <ul class="nav_list">
+            <li class="navitem">Home</li>
+            <li class="navitem">Register</li>
+            <li class="navitem">Latest News</li>
+            <li class="navitem">Contact Us</li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="text-details">
+            <h2> About Our Site</h2>
+            <p>The OM Flora and Fauna organization is to help in the conservation of fauna and flora. Individuals interested in such conservation are encouraged to join the site and bring their ideas. The organiztion will soon be offering membership. Members will be meeting regularly to discuss ideas, organize presentations and visits to different sites.</p>
+            <p>Members will also prepare awreness campaigns and go and meet members of the public to propagate awareness about different types of endangered species the the importance of fauna and flora conservation.</p>
+            <p>There will be need to list the different types of endangered species and collect data about such species and share the data with the public. There will also be the need for a long term action plan.</p>
+        </section>
+
+        <div class="container-fluid">
+            <h2>Sample Pictures</h2>
+            <!--Courtesy www.pinterest.ca/pscheen-->
+            <div class="row">
+                <div class="col-xs-6 col-md-4 col-lg-3">
+                    <img class="photo" src="images/fish.png" alt="Fish Picture">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-3">
+                    <img class="photo" src="images/tree.jpg" alt="Tree Picture">
+                </div>
+                <!-- Courtesy https://unsplash.com/search/photos/flora-and-fauna-->
+                <div class="col-xs-6 col-md-4 col-lg-3">
+                    <img class="photo" src="images/deersize3.jpg" alt="Deer Picture">
+                </div>
+            </div>
+            <p> Acknowledgement- Pictures from: www.pinterest.ca/pscheen, https://unsplash.com/search/photos/flora-and-fauna</p>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/myscript.js"></script>
 </body>
+
 </html>

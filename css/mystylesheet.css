@@ -1,47 +1,66 @@
 
-#bigImage{
-	width:150px;
-	height:150px;
-	float:left;
-	display:block;
+
+#deer_image {
+	width: 150px;
+	height: 150px;
+	float: left;
+	display: inline-block;
 }
-#smallImage{
-	display:none;
+
+* {
+  box-sizing: border-box;
+}
+
+#bird_image {
+	display: none;
 }
 
 .header__menu {
   display: none;
 }
 
-.nav_list{
-	margin-top:50px;
-	list-style:none;
+.nav_list {
+	margin-top: 50px;
+	list-style: none;
 	display: block;
+  text-align: center;
 }
-.navitem{
-	margin-left:10px;
-	display:inline;
+
+.navitem {
+	margin-left: 10px;
+  margin-right: 10px;
+	display: inline;
+  font-size: 1.5em;
 }
-.title_head {
-	 margin-top:50px; 
-     display: inline-block;
+
+.logo_title {
+	 margin-top: 50px; 
+   display: inline-block;
+   color: blue;
+   font-size: 3em;
+}
+
+section {
+	  margin: 50px;
+}
+
+.photo {
+ /* position: relative;*/
+	margin: 2px;
+  width:90%;
+	height: 250px;
 	}
 
-section{
-	  margin:50px;
-}
-.photo{
-	margin:2px;
-	height:250px;
-	width:31%;
-}
-@media screen and (max-width: 650px){
-	.photo{
-		width:45%;
-	}
+@media screen and (max-width: 650px) {
+/*	.photo {
+		width: 45%;
+}*/
+
 /* The transform parts, for getting the menu on and off,
    I have used as provided in the activities, with a little modification*/
-
+.logo_title {
+    font-size: 2em;
+}
 
 .navclass {
    z-index: 10;
@@ -52,11 +71,13 @@ section{
     transform: translate(-300px, 0);
     /* Provide an animation for the drawer (this is optional) */
     transition: transform 0.3s ease;
-  }
+}
+
   .navclass.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
-  }
+}
+
   .navitem {
   	background-color: blue;
   	font-size: 1.5em;
@@ -65,34 +86,42 @@ section{
     border: 1px solid #E0E0E0;
     width: 100%;
     text-align: left;
-  }
-  #menu{
+}
+
+  #menu {
   	/*margin-top:50px;*/
   	display: inline-block;
-  }
+}
 .header__menu {
 	/*margin-top: 50px;*/
    /* display: inline-block;*/
    position: absolute;
-   right:0;
+   right: 0;
    padding: 1em;
-  }
+}
+
  .header__menu svg {
     width: 32px;
     fill: #B0B0EE;
   }
 }
+
 @media screen and (max-width: 475px){
-	.photo{
-		width:90%;
-	}
-	#bigImage{
-			display:none;
-			}	
-	#smallImage{
-		width:150px;
-	    height:150px;
-	    float:left;
-		display:block;
-	}
+		#deer_image {
+			display: none;
+	}	
+
+	#bird_image {
+		width: 150px;
+	  height: 150px;
+	  float: left;
+    display: inline-block;
+			}
+
+  .logo_title {
+   margin-top: 25px; 
+   font-size: 2em;
+   display: inline-block;
+   float: right;
+  }
 }
