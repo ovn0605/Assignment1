@@ -3,8 +3,7 @@
 #deer_image {
 	width: 150px;
 	height: 150px;
-	float: left;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 * {
@@ -35,7 +34,7 @@
 
 .logo_title {
 	 margin-top: 50px; 
-   display: inline-block;
+  /* display: inline-block;*/
    color: blue;
    font-size: 3em;
 }
@@ -114,14 +113,12 @@ section {
 	#bird_image {
 		width: 150px;
 	  height: 150px;
-	  float: left;
-    display: inline-block;
+	  display: block;
 			}
 
   .logo_title {
    margin-top: 25px; 
    font-size: 2em;
-   display: inline-block;
-   float: right;
-  }
+   /*display: inline-block;*/
+     }
 }
